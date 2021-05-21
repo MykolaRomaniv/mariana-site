@@ -45,13 +45,15 @@
       });
     </script>
     <script>
-      $("#intro").click(function () {
-        $("html, body").animate(
-          {
-            scrollTop: $("#about").offset().top,
-          },
-          2000
-        );
+      $(document).ready(function () {
+        $("#intro").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#about").offset().top,
+            },
+            2000
+          );
+        });
       });
     </script>
     <link rel="stylesheet" href="css/style.css" />
