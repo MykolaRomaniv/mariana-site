@@ -17,10 +17,11 @@ button:hover {
 
 .header {
   height: 100vh;
-  background-image: url(/img/Rectangle.png);
+  background-image: url(/img/headerBg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: local;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .menu,
@@ -28,6 +29,11 @@ button:hover {
 .navigation {
   font-family: "Montserrat", sans-serif;
   align-items: baseline;
+}
+
+.logo.blue,
+.navigation.blue {
+  background: #0b3856;
 }
 
 li {
@@ -48,6 +54,13 @@ a {
   padding-top: 2%;
 }
 
+.menu.blue {
+  background: #0b3856;
+  margin: 0;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
 .logo {
   font-size: 1em;
   font-weight: bolder;
@@ -65,7 +78,6 @@ li {
 .intro {
   margin-top: -20%;
   display: flex;
-  text-align: center;
   color: white;
   line-height: 3em;
   height: 100%;
@@ -86,8 +98,18 @@ li {
   font-size: 1.15em;
 }
 .button-intro {
-  border: 2px solid white;
+  border: 2px solid #0b3856;
+  background: #000;
   margin-top: 40px;
+  color: #ebe9b9;
+  cursor: pointer;
+}
+.button-intro:hover {
+  border: 2px solid #0b3856;
+  background: #ebe9b9;
+  margin-top: 40px;
+  color: #0b3856;
+  cursor: pointer;
 }
 .button-inner-intro {
   font-family: "Montserrat", sans-serif;
@@ -223,10 +245,7 @@ h4 {
 /* get in touch start*/
 .touch-background {
   height: 40vh;
-  background-image: url(/img/Paralax-section.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: local;
+  background: #042237;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,7 +343,7 @@ h4 {
 /* footer start*/
 footer {
   padding-top: 80px;
-  background-color: #bf321d;
+  background-color: #042237;
   padding-bottom: 60px;
 }
 
@@ -366,3 +385,92 @@ footer {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: -2px;
 }
+
+.about-title {
+  color: #042237;
+}
+
+/* resent blog post start*/
+.blog {
+  text-align: center;
+  padding-top: 5%;
+  color: #545454;
+  padding-bottom: 7%;
+}
+
+.resent-blog {
+  display: flex;
+  flex-direction: column;
+}
+.blog-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+.blog-content {
+  margin-left: 60px;
+}
+.blog-title {
+  display: flex;
+  flex-direction: row;
+}
+.name-author {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.blog-name {
+  color: #545454;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+  text-align: left;
+}
+
+.blog-author {
+  font-family: "Roboto Slab", serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -15px;
+  text-align: left;
+}
+.date {
+  color: #787878;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: solid;
+  text-align: center;
+}
+.date-number {
+  font-size: 30px;
+}
+.date-border {
+  width: 100px;
+}
+
+.blog-text {
+  padding: 0;
+  margin-top: 20px;
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+}
+.text-inner {
+  text-align: justify;
+  margin-top: 20px;
+  margin: 0;
+}
+.button-read {
+  font-family: "Roboto Slab", serif;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #545454;
+  text-align: left;
+  margin-top: 30px;
+}
+/* resent blog post end*/
