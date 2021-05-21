@@ -3,6 +3,18 @@ html {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+button:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .header {
   height: 100vh;
   background-image: url(/img/Rectangle.png);
@@ -221,7 +233,9 @@ h4 {
 }
 .touch {
   width: 26%;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   color: white;
 }
 .touch-title {
@@ -232,14 +246,14 @@ h4 {
 }
 
 .button-touch {
+  font-family: "Montserrat", sans-serif;
   border: 2px solid white;
   margin-top: 40px;
   width: 135px;
-}
-
-.button-inner-touch {
-  font-family: "Montserrat", sans-serif;
-  margin: 5px 20px 5px 20px;
+  background: transparent;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /* get in touch end*/
 
@@ -348,3 +362,7 @@ footer {
   font-size: 13px;
 }
 /* footer end*/
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2px;
+}
