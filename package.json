@@ -16,7 +16,5 @@
     "url": "https://github.com/MykolaRomaniv/mariana-site/issues"
   },
   "homepage": "https://github.com/MykolaRomaniv/mariana-site#readme",
-  "dependencies": {
-    "tiny-slider": "^2.9.3"
-  }
+  "dependencies": {}
 }
