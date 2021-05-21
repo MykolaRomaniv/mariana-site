@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="../js/magnific-popup/magnific-popup.css" />
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="../js/magnific-popup/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".image-link").magnificPopup({ type: "image" });
+      });
+    </script>
+
     <title>Mur works</title>
   </head>
   <body>
+    <div class="menu blue">
+      <div class="logo blue">Доктор Хто</div>
+      <nav class="navigation blue">
+        <ul>
+          <li><a href="/">Головна</a></li>
+          <li><a href="#about">Хто?</a></li>
+          <li><a href="/works">Галерея</a></li>
+          <li><a href="/blog">Блог</a></li>
+          <li><a href="#contact">Зв'язатись зі мною</a></li>
+          <li><a href="#clients">Цитати</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- latest works start-->
     <div class="works">
       <div>
@@ -26,7 +53,9 @@
       </div>
       <div class="photos">
         <div class="photos-main">
-          <img src="../img/img1-1.png" width="350px" alt="photo" />
+          <a href="../img/img1-1.png" class="image-link"
+            ><img src="../img/img1-1.png" width="350px" alt="photo"
+          /></a>
           <img src="../img/img1-2.png" width="350px" alt="photo" />
           <img src="../img/img1-3.png" width="350px" alt="photo" />
         </div>
@@ -43,5 +72,28 @@
       </div>
     </div>
     <!-- latest works end-->
+    <footer>
+      <div class="socials">
+        <a href="https://twitter.com/hidinthewoods"
+          ><img class="socials-inner" src="../img/twitter.png" alt="twitter"
+        /></a>
+        <a href="https://www.instagram.com/biyanmaryana/">
+          <img
+            class="socials-inner"
+            src="../img/instagram.svg"
+            style="width: 32px"
+            alt="instagram"
+        /></a>
+      </div>
+      <div class="white-line">
+        <div class="white-line-inner"></div>
+      </div>
+      <div class="credits-outer">
+        <div class="credits">
+          2020, Friday, 13 <br />
+          by Mariana's love
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
