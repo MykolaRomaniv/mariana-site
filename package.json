@@ -1,7 +1,7 @@
 {
   "name": "mariana-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site for university project",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MykolaRomaniv/mariana-site/issues"
   },
-  "homepage": "https://github.com/MykolaRomaniv/mariana-site#readme"
+  "homepage": "https://github.com/MykolaRomaniv/mariana-site#readme",
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  }
 }
