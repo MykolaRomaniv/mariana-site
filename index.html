@@ -5,6 +5,36 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Slab:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper("#swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 2,
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const swiper2 = new Swiper("#swiper2", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 1,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8" />
     <title>Mur site</title>
@@ -136,27 +166,36 @@
           </div>
         </div>
         <div class="team">
-          <div class="team-photo">
-            <div class="team-member">
-              <img src="img/TeamPic1.png" width="280px" alt="team" />
-              <h4>Md. Khalil Uddin</h4>
-              <p class="team-role">Head of Ideas</p>
+          <!-- Slider main container -->
+          <div id="swiper" class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide team-member">
+                <img src="img/TeamPic1.png" width="280px" alt="team" />
+                <h4>Md. Khalil Uddin</h4>
+                <p class="team-role">Head of Ideas</p>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/TeamPic2.png" width="280px" alt="team" />
+                <h4>Rubel Miah</h4>
+                <p class="team-role">Lead WordPress Developer</p>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/TeamPic3.png" width="280px" alt="team" />
+                <h4>Shamim Mia</h4>
+                <p class="team-role">Sr. Web Developer</p>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/TeamPic4.png" width="280px" alt="team" />
+                <h4>John Doe</h4>
+                <p class="team-role">Front-end Developer</p>
+              </div>
             </div>
-            <div class="team-member">
-              <img src="img/TeamPic2.png" width="280px" alt="team" />
-              <h4>Rubel Miah</h4>
-              <p class="team-role">Lead WordPress Developer</p>
-            </div>
-            <div class="team-member">
-              <img src="img/TeamPic3.png" width="280px" alt="team" />
-              <h4>Shamim Mia</h4>
-              <p class="team-role">Sr. Web Developer</p>
-            </div>
-            <div class="team-member">
-              <img src="img/TeamPic4.png" width="280px" alt="team" />
-              <h4>John Doe</h4>
-              <p class="team-role">Front-end Developer</p>
-            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
@@ -168,59 +207,108 @@
           <div class="touch-title">
             <p>Do you like OUR WORK so far? Let's talk about YOUR PROJECT!</p>
           </div>
-          <div class="button-touch">
-            <span class="button-inner-touch">Get in touch</span>
-          </div>
+          <button class="button-touch">
+            Get in touch
+          </button>
         </div>
       </div>
       <!-- get in touch end-->
 
       <!-- clients start-->
       <div id="clients" class="clients">
-        <div class="brends">
-          <img
-            class="brends-inner"
-            src="img/logo1.png"
-            width="110px"
-            alt="client"
-          />
-          <img
-            class="brends-inner"
-            src="img/logo2.png"
-            width="110px"
-            alt="client"
-          />
-          <img
-            class="brends-inner"
-            src="img/logo3.png"
-            width="110px"
-            alt="client"
-          />
-          <img
-            class="brends-inner"
-            src="img/logo4.png"
-            width="110px"
-            alt="client"
-          />
-          <img
-            class="brends-inner"
-            src="img/logo5.png"
-            width="110px"
-            alt="client"
-          />
-        </div>
-        <div class="quotes">
-          <p class="quote-text">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, d words which don't look even slightly believable.
-          </p>
-          <p class="author">John Doe, Google Inc.</p>
-        </div>
-        <div class="button-clients">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+        <!-- Slider main container -->
+        <div id="swiper2" class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="brends">
+                <img
+                  class="brends-inner"
+                  src="img/logo1.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo2.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo3.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo4.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo5.png"
+                  width="110px"
+                  alt="client"
+                />
+              </div>
+              <div class="quotes">
+                <p class="quote-text">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, d words which don't look even
+                  slightly believable.
+                </p>
+                <p class="author">John Doe, Google Inc.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="brends">
+                <img
+                  class="brends-inner"
+                  src="img/logo1.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo2.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo3.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo4.png"
+                  width="110px"
+                  alt="client"
+                />
+                <img
+                  class="brends-inner"
+                  src="img/logo5.png"
+                  width="110px"
+                  alt="client"
+                />
+              </div>
+              <div class="quotes">
+                <p class="quote-text">
+                  There are many variations of passages of Lorem Ipsum
+                  available, buas as a as sad as asd adas ad asd ads sa sa words
+                  which don't look even slightly believable.
+                </p>
+                <p class="author">John Doe, Google Inc.</p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <!-- clients end-->
