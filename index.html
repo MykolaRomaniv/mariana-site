@@ -20,55 +20,46 @@
       crossorigin="anonymous"
     ></script>
     <script type="module">
-      const swiper = new Swiper("#swiper", {
+      const swiper = new Swiper('#swiper', {
         // Optional parameters
-        direction: "horizontal",
+        direction: 'horizontal',
         slidesPerView: 2,
         loop: true,
 
         // Navigation arrows
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-      });
-      const swiper2 = new Swiper("#swiper2", {
+      })
+      const swiper2 = new Swiper('#swiper2', {
         // Optional parameters
-        direction: "horizontal",
+        direction: 'horizontal',
         slidesPerView: 1,
         loop: true,
 
         // If we need pagination
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
         },
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("#intro").click(function () {
-          $("html, body").animate(
-            {
-              scrollTop: $("#about").offset().top,
-            },
-            2000
-          );
-        });
-      });
+      })
     </script>
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8" />
     <title>Mur site</title>
   </head>
+
   <body>
     <!-- HEADER START-->
     <header class="header">
+      <video autoplay muted loop id="myVideo">
+        <source src="./videos/headerVideo.mp4" type="video/mp4" />
+      </video>
       <div class="menu">
         <div class="logo">Доктор Хто</div>
         <nav class="navigation">
           <ul>
             <li><a href="/">Головна</a></li>
-            <!-- <li><a href="#services">Services</a></li> -->
             <li><a href="/#about">Хто?</a></li>
             <li><a href="/gallery">Галерея</a></li>
             <li><a href="/blog">Блог</a></li>
@@ -78,20 +69,21 @@
         </nav>
       </div>
 
-      <a href="#about">
-        <div id="#intro" class="intro">
-          <div class="button-intro">
-            <span class="button-inner-intro">Knock-knock!</span>
+      <!-- <div class="intro">
+        <a href="#about">
+          <div id="#intro" class="button-intro">
+            <span class="button-inner-intro"
+              ><i class="fas fa-chevron-down"></i
+            ></span>
           </div>
-        </div>
-      </a>
+        </a>
+      </div> -->
     </header>
     <!-- HEADER END-->
 
     <!-- MAIN START-->
-    <main>
-      <!-- services start-->
-      <!-- <div id="services" class="services">
+    <!-- services start-->
+    <!-- <div id="services" class="services">
         <div>
           <h3>Services</h3>
           <div class="line"></div>
@@ -148,101 +140,102 @@
           </div>
         </div>
       </div> -->
-      <!-- services end-->
+    <!-- services end-->
 
-      <!-- about us start-->
-      <div id="about" class="about-us">
-        <div>
-          <h3 class="about-title">Хто такий доктор?</h3>
-          <div class="line"></div>
-          <div class="caption">
-            Краще мати розбите серце, ніж не мати його зовсім.
-          </div>
-        </div>
-        <div class="section">
-          <div class="content">
-            <p class="content-inner">
-              «Доктор» є основним псевдонімом Повелителя часу-ренегата з
-              Галліфрея, який подорожує крізь час і простір з різними
-              супутниками в своїй застарілої і «запозиченої» ТАРДІС 40 Типу. Він
-              є найбільшим захисником Всесвіту, він рятував світ тисячі разів
-              протягом свого довгого життя, став легендою в безлічі світів.
-            </p>
-
-            <p class="content-inner">
-              Незважаючи на різні риси особистості кожного втілення, Доктор
-              завжди зберігав в собі "частинку адреналіну, щіпку обурення і
-              натяк на паніку", які допомагали йому зрозуміти, хто він такий,
-              (ТВ: Жінка, яка впала на Землю) разом з обіцянкою дотримуватися
-              всього, що означало ім'я "Доктор". (ТВ: День Доктора).
-            </p>
-          </div>
-        </div>
-        <div class="team">
-          <!-- Slider main container -->
-          <div id="swiper" class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide team-member">
-                <img src="img/1.png" width="280px" alt="team" />
-                <h4>1 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/2.png" width="280px" alt="team" />
-                <h4>2 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/3.png" width="280px" alt="team" />
-                <h4>3 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/4.png" width="280px" alt="team" />
-                <h4>4 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/5.png" width="280px" alt="team" />
-                <h4>5 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/6.png" width="280px" alt="team" />
-                <h4>6 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/7.png" width="280px" alt="team" />
-                <h4>7 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/8.png" width="280px" alt="team" />
-                <h4>8 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/10.png" width="280px" alt="team" />
-                <h4>10 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/11.png" width="280px" alt="team" />
-                <h4>11 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/12.png" width="280px" alt="team" />
-                <h4>12 Доктор</h4>
-              </div>
-              <div class="swiper-slide team-member">
-                <img src="img/13.png" width="280px" alt="team" />
-                <h4>13 Доктор</h4>
-              </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+    <!-- about us start-->
+    <div id="about" class="about-us">
+      <div>
+        <h3 class="about-title">Хто такий доктор?</h3>
+        <div class="line"></div>
+        <div class="caption">
+          Краще мати розбите серце, ніж не мати його зовсім.
         </div>
       </div>
-      <!-- about us end-->
+      <div class="section">
+        <div class="content">
+          <p class="content-inner">
+            «Доктор» є основним псевдонімом Повелителя часу-ренегата з
+            Галліфрея, який подорожує крізь час і простір з різними супутниками
+            в своїй застарілої і «запозиченої» ТАРДІС 40 Типу. Він є найбільшим
+            захисником Всесвіту, він рятував світ тисячі разів протягом свого
+            довгого життя, став легендою в безлічі світів.
+          </p>
 
-      <!-- get in touch start-->
+          <p class="content-inner">
+            Незважаючи на різні риси особистості кожного втілення, Доктор завжди
+            зберігав в собі "частинку адреналіну, щіпку обурення і натяк на
+            паніку", які допомагали йому зрозуміти, хто він такий, (ТВ: Жінка,
+            яка впала на Землю) разом з обіцянкою дотримуватися всього, що
+            означало ім'я "Доктор". (ТВ: День Доктора).
+          </p>
+        </div>
+      </div>
+      <div class="team">
+        <!-- Slider main container -->
+        <div id="swiper" class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide team-member">
+              <img src="img/1.png" width="280px" alt="team" />
+              <h4>1 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/2.png" width="280px" alt="team" />
+              <h4>2 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/3.png" width="280px" alt="team" />
+              <h4>3 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/4.png" width="280px" alt="team" />
+              <h4>4 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/5.png" width="280px" alt="team" />
+              <h4>5 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/6.png" width="280px" alt="team" />
+              <h4>6 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/7.png" width="280px" alt="team" />
+              <h4>7 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/8.png" width="280px" alt="team" />
+              <h4>8 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/10.png" width="280px" alt="team" />
+              <h4>10 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/11.png" width="280px" alt="team" />
+              <h4>11 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/12.png" width="280px" alt="team" />
+              <h4>12 Доктор</h4>
+            </div>
+            <div class="swiper-slide team-member">
+              <img src="img/13.png" width="280px" alt="team" />
+              <h4>13 Доктор</h4>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <!-- about us end-->
+
+    <!-- get in touch start-->
+    <div class="bottomBg">
       <div id="contact" class="touch-background">
         <div class="touch">
           <div class="touch-title">
@@ -254,7 +247,6 @@
         </div>
       </div>
       <!-- get in touch end-->
-
       <!-- clients start-->
       <div id="clients" class="clients">
         <!-- Slider main container -->
@@ -287,45 +279,56 @@
         </div>
       </div>
       <!-- clients end-->
-
       <!-- contact start-->
       <!-- <div class="footer">
-        <div>
-          <h3>Get in touch</h3>
-          <div class="line"></div>
-          <div class="caption">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          <div>
+            <h3>Get in touch</h3>
+            <div class="line"></div>
+            <div class="caption">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            </div>
+          </div>
+        </div> -->
+      <!-- contact end-->
+      <!-- MAIN END-->
+      <!-- footer start-->
+      <footer>
+        <div class="social-wrapper">
+          <div class="socials">
+            <a href="https://twitter.com/hidinthewoods"
+              ><img class="socials-inner" src="img/twitter.png" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/biyanmaryana/">
+              <img
+                class="socials-inner"
+                src="img/instagram.svg"
+                style="width: 32px"
+                alt="instagram"
+            /></a>
+          </div>
+          <div class="white-line">
+            <div class="white-line-inner"></div>
+          </div>
+          <div class="credits-outer">
+            <div class="credits">
+              2020, Friday, 13 <br />
+              by Mariana's love
+            </div>
           </div>
         </div>
-      </div> -->
-      <!-- contact end-->
-    </main>
-    <!-- MAIN END-->
-
-    <!-- footer start-->
-    <footer>
-      <div class="socials">
-        <a href="https://twitter.com/hidinthewoods"
-          ><img class="socials-inner" src="img/twitter.png" alt="twitter"
-        /></a>
-        <a href="https://www.instagram.com/biyanmaryana/">
-          <img
-            class="socials-inner"
-            src="img/instagram.svg"
-            style="width: 32px"
-            alt="instagram"
-        /></a>
-      </div>
-      <div class="white-line">
-        <div class="white-line-inner"></div>
-      </div>
-      <div class="credits-outer">
-        <div class="credits">
-          2020, Friday, 13 <br />
-          by Mariana's love
-        </div>
-      </div>
-    </footer>
+        <iframe
+          style="width: 50%; height: 35vh"
+          width="500"
+          height="350"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="http://slowe.github.io/VirtualSky/embed?&projection=stereo&live=true&az=216.03354015976333"
+          allowTransparency="true"
+        ></iframe>
+      </footer>
+    </div>
     <!-- footer end-->
   </body>
 </html>
