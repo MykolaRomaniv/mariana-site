@@ -14,6 +14,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script type="module">
       const swiper = new Swiper("#swiper", {
         // Optional parameters
@@ -39,6 +44,16 @@
         },
       });
     </script>
+    <script>
+      $("#intro").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#about").offset().top,
+          },
+          2000
+        );
+      });
+    </script>
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8" />
     <title>Mur site</title>
@@ -47,36 +62,34 @@
     <!-- HEADER START-->
     <header class="header">
       <div class="menu">
-        <div class="logo">Startup</div>
+        <div class="logo">Доктор Хто</div>
         <nav class="navigation">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="/works">Works</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#clients">Clients</a></li>
+            <li><a href="/">Головна</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#about">Хто?</a></li>
+            <li><a href="/works">Галерея</a></li>
+            <li><a href="/blog">Блог</a></li>
+            <li><a href="#contact">Зв'язатись зі мною</a></li>
+            <li><a href="#clients">Цитати</a></li>
           </ul>
         </nav>
       </div>
 
-      <div class="intro">
-        <div class="welcome">Welcome to Startup</div>
-        <div class="welcome-caption">
-          Your Favourite Creative Agency Template
+      <a href="#about">
+        <div id="#intro" class="intro">
+          <div class="button-intro">
+            <span class="button-inner-intro">Knock-knock!</span>
+          </div>
         </div>
-        <div class="button-intro">
-          <span class="button-inner-intro">Get started</span>
-        </div>
-      </div>
+      </a>
     </header>
     <!-- HEADER END-->
 
     <!-- MAIN START-->
     <main>
       <!-- services start-->
-      <div id="services" class="services">
+      <!-- <div id="services" class="services">
         <div>
           <h3>Services</h3>
           <div class="line"></div>
@@ -132,40 +145,34 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- services end-->
 
       <!-- about us start-->
       <div id="about" class="about-us">
         <div>
-          <h3>About us</h3>
+          <h3 class="about-title">Хто такий доктор?</h3>
           <div class="line"></div>
           <div class="caption">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            Краще мати розбите серце, ніж не мати його зовсім.
           </div>
         </div>
         <div class="section">
           <div class="content">
             <p class="content-inner">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+              «Доктор» є основним псевдонімом Повелителя часу-ренегата з
+              Галліфрея, який подорожує крізь час і простір з різними
+              супутниками в своїй застарілої і «запозиченої» ТАРДІС 40 Типу. Він
+              є найбільшим захисником Всесвіту, він рятував світ тисячі разів
+              протягом свого довгого життя, став легендою в безлічі світів.
             </p>
 
             <p class="content-inner">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+              Незважаючи на різні риси особистості кожного втілення, Доктор
+              завжди зберігав в собі "частинку адреналіну, щіпку обурення і
+              натяк на паніку", які допомагали йому зрозуміти, хто він такий,
+              (ТВ: Жінка, яка впала на Землю) разом з обіцянкою дотримуватися
+              всього, що означало ім'я "Доктор". (ТВ: День Доктора).
             </p>
           </div>
         </div>
@@ -176,24 +183,52 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide team-member">
-                <img src="img/TeamPic1.png" width="280px" alt="team" />
-                <h4>Md. Khalil Uddin</h4>
-                <p class="team-role">Head of Ideas</p>
+                <img src="img/1.png" width="280px" alt="team" />
+                <h4>1 Доктор</h4>
               </div>
               <div class="swiper-slide team-member">
-                <img src="img/TeamPic2.png" width="280px" alt="team" />
-                <h4>Rubel Miah</h4>
-                <p class="team-role">Lead WordPress Developer</p>
+                <img src="img/2.png" width="280px" alt="team" />
+                <h4>2 Доктор</h4>
               </div>
               <div class="swiper-slide team-member">
-                <img src="img/TeamPic3.png" width="280px" alt="team" />
-                <h4>Shamim Mia</h4>
-                <p class="team-role">Sr. Web Developer</p>
+                <img src="img/3.png" width="280px" alt="team" />
+                <h4>3 Доктор</h4>
               </div>
               <div class="swiper-slide team-member">
-                <img src="img/TeamPic4.png" width="280px" alt="team" />
-                <h4>John Doe</h4>
-                <p class="team-role">Front-end Developer</p>
+                <img src="img/4.png" width="280px" alt="team" />
+                <h4>4 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/5.png" width="280px" alt="team" />
+                <h4>5 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/6.png" width="280px" alt="team" />
+                <h4>6 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/7.png" width="280px" alt="team" />
+                <h4>7 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/8.png" width="280px" alt="team" />
+                <h4>8 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/10.png" width="280px" alt="team" />
+                <h4>10 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/11.png" width="280px" alt="team" />
+                <h4>11 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/12.png" width="280px" alt="team" />
+                <h4>12 Доктор</h4>
+              </div>
+              <div class="swiper-slide team-member">
+                <img src="img/13.png" width="280px" alt="team" />
+                <h4>13 Доктор</h4>
               </div>
             </div>
 
@@ -209,9 +244,11 @@
       <div id="contact" class="touch-background">
         <div class="touch">
           <div class="touch-title">
-            <p>Do you like OUR WORK so far? Let's talk about YOUR PROJECT!</p>
+            <p>Ей, хувіани, ви тут? Давайте поспілкуємось!</p>
           </div>
-          <button class="button-touch">Get in touch</button>
+          <a href="mailto: mariana.biian.knm.2019@lpnu.ua"
+            ><button class="button-touch">Get in touch</button></a
+          >
         </div>
       </div>
       <!-- get in touch end-->
@@ -224,88 +261,22 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="brends">
-                <img
-                  class="brends-inner"
-                  src="img/logo1.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo2.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo3.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo4.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo5.png"
-                  width="110px"
-                  alt="client"
-                />
-              </div>
               <div class="quotes">
                 <p class="quote-text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, d words which don't look even
-                  slightly believable.
+                  Я буду всього лише історією у тебе в голові ... Тільки нехай
+                  це буде хороша історія, тому що, знаєш, це і була хороша
+                  історія. Найкраща.
                 </p>
-                <p class="author">John Doe, Google Inc.</p>
+                <p class="author">11 Доктор</p>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="brends">
-                <img
-                  class="brends-inner"
-                  src="img/logo1.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo2.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo3.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo4.png"
-                  width="110px"
-                  alt="client"
-                />
-                <img
-                  class="brends-inner"
-                  src="img/logo5.png"
-                  width="110px"
-                  alt="client"
-                />
-              </div>
               <div class="quotes">
                 <p class="quote-text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, buas as a as sad as asd adas ad asd ads sa sa words
-                  which don't look even slightly believable.
+                  Всі ці речі, заради яких я готовий померти, просто ніщо в
+                  порівнянні з тими, заради яких я хочу жити.
                 </p>
-                <p class="author">John Doe, Google Inc.</p>
+                <p class="author">7 Доктор</p>
               </div>
             </div>
           </div>
@@ -332,10 +303,16 @@
     <!-- footer start-->
     <footer>
       <div class="socials">
-        <img class="socials-inner" src="img/twitter.png" alt="twitter" />
-        <img class="socials-inner" src="img/twitter.png" alt="twitter" />
-        <img class="socials-inner" src="img/twitter.png" alt="twitter" />
-        <img class="socials-inner" src="img/twitter.png" alt="twitter" />
+        <a href="https://twitter.com/hidinthewoods"
+          ><img class="socials-inner" src="img/twitter.png" alt="twitter"
+        /></a>
+        <a href="https://www.instagram.com/biyanmaryana/">
+          <img
+            class="socials-inner"
+            src="img/instagram.svg"
+            style="width: 32px"
+            alt="instagram"
+        /></a>
       </div>
       <div class="white-line">
         <div class="white-line-inner"></div>
