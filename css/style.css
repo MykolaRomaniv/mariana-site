@@ -16,6 +16,11 @@ button:hover {
   background: rgba(0, 0, 0, 0.1);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   /* height: 100vh; */
   /* background-image: url(/img/headerBg1.png); */
@@ -43,7 +48,7 @@ button:hover {
 .menu,
 .logo,
 .navigation {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   align-items: baseline;
 }
 
@@ -107,7 +112,7 @@ li {
 
 .navigation li:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   width: 100%;
@@ -129,13 +134,13 @@ li {
 }
 
 .welcome {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 2.5em;
   letter-spacing: 0.8px;
 }
 .welcome-caption {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 1.15em;
 }
 .button-intro {
@@ -153,7 +158,7 @@ li {
   cursor: pointer;
 }
 .button-inner-intro {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -166,12 +171,12 @@ li {
 }
 h3 {
   color: #545454;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding: 10px;
 }
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 0.8em;
   color: #545454;
@@ -183,7 +188,7 @@ h4 {
   margin: auto;
 }
 .caption {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   padding: 15px;
   font-weight: bold;
   color: #545454;
@@ -245,7 +250,7 @@ h4 {
 }
 .team-role {
   align-items: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13.5px;
   font-weight: bold;
 }
@@ -301,13 +306,13 @@ h4 {
 }
 .touch-title {
   text-align: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 25px;
 }
 
 .button-touch {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 2px solid white;
   margin-top: 40px;
   width: 135px;
@@ -340,7 +345,7 @@ h4 {
 }
 .quote-text {
   color: #545454;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: bold;
   font-size: 14px;
   font-style: italic;
@@ -349,7 +354,7 @@ h4 {
 }
 .author {
   color: #545454;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: bold;
 }
 .button-clients {
@@ -421,7 +426,7 @@ footer {
 }
 .credits {
   color: white;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -469,7 +474,7 @@ footer {
 }
 .blog-name {
   color: #545454;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0;
@@ -477,7 +482,7 @@ footer {
 }
 
 .blog-author {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   font-weight: bold;
   font-style: italic;
@@ -486,7 +491,7 @@ footer {
 }
 .date {
   color: #787878;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   border: solid;
@@ -512,7 +517,7 @@ footer {
   margin: 0;
 }
 .button-read {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 13px;
   font-weight: 900;
   text-transform: uppercase;
