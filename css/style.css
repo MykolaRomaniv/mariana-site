@@ -517,6 +517,8 @@ footer {
   margin: 0;
 }
 .button-read {
+  position: relative;
+  width: fit-content;
   font-family: "Roboto Slab", serif;
   font-size: 13px;
   font-weight: 900;
@@ -525,8 +527,47 @@ footer {
   text-align: left;
   margin-top: 30px;
 }
+.button-read:hover::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #545454;
+  bottom: 0;
+  left: 0;
+}
+
 /* resent blog post end*/
 
 .clients > .swiper-container {
   height: 150px;
+}
+
+.about-container {
+  margin-top: 50px;
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mariana {
+  width: 25%;
+  /* margin: auto; */
+  margin-right: 150px;
+}
+
+.about-title {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text .blog-text {
+  width: 70%;
 }
